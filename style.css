@@ -15,3 +15,8 @@ h1 {
     text-align: left;
     margin-left: 100px;
 }
+
+img {
+    width: 75%; /* Default width */
+    height: auto;
+}
