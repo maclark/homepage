@@ -1,19 +1,23 @@
 body {
     font-family: Georgia, sans-serif;
-    text-align: center;
-    margin: 50px;
+    color: black;
+    
+    background-image: url('flock_border.png'); /* Path to your image */
+    background-position: center; /* Center the image */
+    background-repeat: repeat;
+    background-size: cover; /* Make the background cover the entire viewport */
+
+    display: flex;
+    justify-content: center; /* Centers the column horizontally */
+    align-items: flex-start; /* Aligns the column to the top */
+    min-height: 100vh; /* Ensures the body takes full height */
+    margin: 0;
 }
 
-p {
-    text-align: left;
-    margin-left: 100px;
-    width: 50%; 
-    max-width: 600px;
-}
-
-h1 {
-    text-align: left;
-    margin-left: 100px;
+.column {
+    width: 100%; /* Adjust the width of the column as needed */
+    max-width: 680px; /* Optional: Set a max width */
+    text-align: left; /* Ensures text inside the column is left-aligned */
 }
 
 img {
