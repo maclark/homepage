@@ -1,11 +1,19 @@
+:root {
+    --var-background-image: url('flock_border.png');
+}
+
+[data-theme = "dark-theme"] {
+    /*--var-background-image:url('lotsdogs.jpg');*/
+} 
+
 body {
     font-family: Georgia, sans-serif;
     color: black;
     
-    background-image: url('flock_border.png'); /* Path to your image */
-    background-position: center; /* Center the image */
+    background-image: var(--var-background-image);
+    background-position: center; 
     background-repeat: repeat;
-    background-size: cover; /* Make the background cover the entire viewport */
+    background-size: cover; 
 
     display: flex;
     justify-content: center; /* Centers the column horizontally */
