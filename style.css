@@ -18,24 +18,8 @@ body {
     background-size: cover; 
     background-position: center; 
 }
-.root { width: 100%; margin: auto; max-width:50em;}
-/*
-body {
+.root { width: 100%; margin: auto; max-width:50em;} /* i guess this was for div="root"*/
 
-    
-    color: black;
-    
-    background-image: var(--var-background-image);
-    background-position: center; 
-    background-repeat: repeat;
-    background-size: cover; 
-
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-    min-height: 100vh;
-}
-*/
 
 img {
     width: 75%; /* Default width */
@@ -48,7 +32,15 @@ img {
     }
 }
 
+iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    width: 100%;
+    max-width:600px;
+}
+
 @media (min-width:800x){
+    
     img {
         flex:100%; 
         max-width:1000em; 
