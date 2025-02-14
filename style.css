@@ -1,13 +1,28 @@
 :root {
     --var-background-image: url('flock_border.png');
+    --var-color: black;
 }
 
 [data-theme = "dark-theme"] {
-    /*--var-background-image:url('lotsdogs.jpg');*/
+    --var-background-image:url('flock_border_night.png');
+    --var-color: black;
 } 
 
+* { padding:0; margin:0; }
 body {
+    margin-left:1em; 
+    margin-right:1em; 
     font-family: Georgia, sans-serif;
+    color: var(--var-color);
+    background-image: var(--var-background-image);
+    background-size: cover; 
+    background-position: center; 
+}
+.root { width: 100%; margin: auto; max-width:50em;}
+/*
+body {
+
+    
     color: black;
     
     background-image: var(--var-background-image);
@@ -16,17 +31,11 @@ body {
     background-size: cover; 
 
     display: flex;
-    justify-content: center; /* Centers the column horizontally */
-    align-items: flex-start; /* Aligns the column to the top */
-    min-height: 100vh; /* Ensures the body takes full height */
-    margin: 0;
+    justify-content: center; 
+    align-items: flex-start; 
+    min-height: 100vh;
 }
-
-.column {
-    width: 100%; /* Adjust the width of the column as needed */
-    max-width: 680px; /* Optional: Set a max width */
-    text-align: left; /* Ensures text inside the column is left-aligned */
-}
+*/
 
 img {
     width: 75%; /* Default width */
@@ -36,5 +45,13 @@ img {
     @media (max-width: 768px) {
         width: 100%;
         height: auto;
+    }
+}
+
+@media (min-width:800x){
+    img {
+        flex:100%; 
+        max-width:1000em; 
+        margin-top:0;
     }
 }
