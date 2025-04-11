@@ -1,18 +1,32 @@
 :root {
     --var-background-image: url('flock_border.png');
-    --var-color: black;
+    --var-color: rgb(0, 0, 0);
 }
 
 [data-theme = "dark-theme"] {
-    --var-background-image:url('flock_border_night.png');
-    --var-color: black;
+    /*--var-background-image:url('flock_border_night.png');*/
+    --var-background-image: url('flock_border.png');
+    --var-color: rgb(0, 0,0);
 } 
+
+/*
+ffd96a
+rgb(255, 217, 106)
+rgb(158, 203, 147)
+rgb(31, 48, 25)
+*/
+
+.toplinks2 { display:flex; flex-direction:column; justify-content:space-between; background-color:rgb(255, 217, 106); margin-bottom:1em; padding-right:1em; }
+  .toplinks2 img { width:2em; height:2em; vertical-align:middle; margin-left:0.5em; margin-right:0.5em; margin-top:0.5em; margin-bottom:0.5em; }
+
+h1 { font-size:1.75em; background-color:rgb(255, 217, 106); padding:0.5em; margin-bottom:1em; margin-top:2em; }
+
 
 * { padding:0; margin:0; }
 body {
     margin-left:1em; 
     margin-right:1em; 
-    font-family: Georgia, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--var-color);
     background-image: var(--var-background-image);
     background-size: cover; 
@@ -31,6 +45,7 @@ img {
         height: auto;
     }
 }
+
 
 iframe {
     aspect-ratio: 16 / 9;
